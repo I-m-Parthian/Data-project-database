@@ -86,3 +86,7 @@ COPY umpires(umpire, nationality, first_officiated, last_officiated, no_of_match
 FROM :'umpires_path'
 DELIMITER ','
 CSV HEADER;
+
+
+-- Grant user acces to view and manipulate the data
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO parth;
